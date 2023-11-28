@@ -1,0 +1,95 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+h1{
+    width: 400px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+.flex{
+    width: 100%;
+    min-height: 70vh;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.flex div{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.227);
+    width: 20%;
+    height: 200px;
+}
+.a{
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+.a h2{
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+button{
+    background-color: #333;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    text-transform: uppercase;
+}
+button:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.148);
+    font-weight: bold;
+    transition: 0.6s;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

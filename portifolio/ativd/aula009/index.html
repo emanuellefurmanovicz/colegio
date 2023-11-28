@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 009</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'Pixelify Sans', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
+
+        div {
+
+            width: 50%;
+            height: 70%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1,
+        h2 {
+            margin: 15px 0px 25px;
+            color: black;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            font-size: 1.5em;
+            padding: 8px;
+            color: black;
+            text-transform: uppercase;
+            cursor: pointer;
+            border: 2px solid white;
+        }
+
+        #msg {
+            color: black;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Bem Vindo(a)</h1>
+        <button id="botao">Quer ouvir uma piada?</button>
+        <p id="msg"></p>
+        <audio src="just-sans-talking.mp3" id="audio"></audio>
+    </div>
+
+    <script>
+        const msgDivert = [
+            "O que o pato disse para a pata? Vem Quá!",
+            "Por que o menino estava falando ao telefone deitado? Para não cair a ligação.",
+            "Qual é a fórmula da água benta? H Deus O!",
+            "O que o pintinho falou para a mãe dele? Oi, mãe!",
+            "Qual é a cidade brasileira que não tem táxi? Uberlândia."
+        ]
+        let botao = document.getElementById('botao')
+        let msg = document.getElementById('msg')
+        botao.addEventListener('click', function () {
+            const msgAleatoria = msgDivert[Math.floor(Math.random() * msgDivert.length)]
+            msg.textContent = msgAleatoria
+            msg.style.padding = '5px'
+            msg.style.border = '2px solid white'
+        })
+
+    </script>
+</body>
+
+</html>
