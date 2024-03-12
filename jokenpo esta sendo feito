@@ -1,0 +1,31 @@
+import random
+import jogos
+def jogar_jokenpo():
+    opcoes = ["pedra","papel","tesoura"]
+    print("Bem-vindo ao jogo Jokenpo!")
+    print("Escolha: pedra, papel ou tesoura.")
+
+    while true:
+        escolha_jogador = input("Sua escolha:")
+        if escolha_jogador not in opcoes:
+            ptint("escolha invalida. tente novamente.")
+            continue
+
+        escolha_computador = random.choice(opcoes)
+
+        print(f"computador escolheu: {escolha_computador}")
+
+        jogar_novamente = input("voce quer jogar novamente?")
+        if jogar_novamente != "sim":
+            break
+
+if__name__ == "__main__":
+def jogar_jokenpo():
+    while true:
+        escolha_jogador = input("sua escolha:")
+        if escolha_jogador not in
+    escolha_computador = random.choice(opcoes)
+
+    print(f"computador escolheu: {escolha_computador}")
+
+    if escolha_jogador == escolha_computador:
