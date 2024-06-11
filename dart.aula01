@@ -1,0 +1,15 @@
+class Caracter{
+  String nome = "Ana";
+  double altura= 1.75;
+  double forca= 18;
+  double idade= 17;
+  double velocidade= 7;
+
+void Andar(){
+  print("andando...velocidade 3");
+  String tecla = "8";
+}
+
+void EstaPrecionado(){
+  Bool Precionado = true
+}
